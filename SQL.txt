@@ -1,0 +1,9 @@
+Типичная связь много ко многим
+первая таблица Products(nameProduct, id_product*)
+вторая таблица Categories(nameCategory, id_category*)
+третья таблица CategoriesProducts(id_product*, id_category*)
+
+SELECT Products.nameProduct, Categories.nameCategory 
+FROM Products
+LEFT JOIN CategoriesProducts ON CategoriesProducts.id_product = Products.id_product
+LEFT JOIN Categories ON Categories.id_category = CategoriesProducts.id_category
