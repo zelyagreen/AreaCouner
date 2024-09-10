@@ -1,7 +1,8 @@
-Типичная связь много ко многим
-первая таблица Products(nameProduct, id_product*)
-вторая таблица Categories(nameCategory, id_category*)
-третья таблица CategoriesProducts(id_product*, id_category*)
+Typical many-to-many
+
+First Table: Products(nameProduct, id_product*)
+Second Table: Categories(nameCategory, id_category*)
+Third Table: CategoriesProducts(id_product*, id_category*)
 
 SELECT Products.nameProduct, Categories.nameCategory 
 FROM Products
